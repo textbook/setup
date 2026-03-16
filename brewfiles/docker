@@ -1,0 +1,5 @@
+cask "docker-desktop"
+vscode "docker.docker"
+vscode "ms-azuretools.vscode-containers"
+vscode "ms-azuretools.vscode-docker"
+vscode "ms-vscode-remote.remote-containers"

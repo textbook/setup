@@ -1,0 +1,5 @@
+vscode "dbaeumer.vscode-eslint"
+vscode "esbenp.prettier-vscode"
+vscode "ms-playwright.playwright"
+vscode "orta.vscode-jest"
+vscode "vitest.explorer"
