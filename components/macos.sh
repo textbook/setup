@@ -4,12 +4,11 @@ set -euo pipefail
 echo 'Customising macOS configuration...'
 
 # Set menu clock
-defaults write com.apple.menuextra.clock "DateFormat" 'd MMM  kk:mm:ss'
-defaults write com.apple.menuextra.clock "ShowAMPM" '1'
-defaults write com.apple.menuextra.clock "ShowDate" '1'
-defaults write com.apple.menuextra.clock "ShowDayOfWeek" '0'
-defaults write com.apple.menuextra.clock "ShowSeconds" '0'
-killall SystemUIServer
+defaults write com.apple.menuextra.clock.plist DateFormat -string "d MMM HH:mm:ss"
+defaults write com.apple.menuextra.clock.plist ShowSeconds -bool true
+defaults write com.apple.menuextra.clock.plist Show24Hour -bool true
+defaults write com.apple.menuextra.clock.plist ShowDate -int 1
+killall ControlCenter
 
 # hide the dock
 defaults write com.apple.dock autohide -bool true
