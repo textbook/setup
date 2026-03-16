@@ -28,3 +28,6 @@ dockutil --add '~/Downloads' --display folder --restart --section others --sort 
 
 # Force Preference Refresh
 killall -u $USER cfprefsd
+
+# Configure iTerm2
+cp "$HERE/config/com.googlecode.iterm2.plist" ~/Library/Preferences
