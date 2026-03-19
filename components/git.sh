@@ -1,8 +1,12 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
+mkdir -p ~/.config/git
+cp "$HERE/config/.gitignore" ~/.config/git
+
 git config --global branch.sort -committerdate
 git config --global core.editor "$(brew --prefix)/bin/vim"
+git config --global core.excludesfile ~/.config/git/.gitignore
 git config --global diff.algorithm histogram
 git config --global diff.context 10
 git config --global fetch.prune true
