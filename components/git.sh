@@ -11,6 +11,7 @@ git config --global diff.algorithm histogram
 git config --global diff.context 10
 git config --global fetch.prune true
 git config --global fetch.prunetags true
+git config --global init.defaultBranch main
 git config --global log.date iso
 git config --global merge.conflictstyle zdiff3
 git config --global pull.rebase true
