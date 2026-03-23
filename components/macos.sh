@@ -17,6 +17,11 @@ killall Dock
 # Set Finder to display full path in title bar
 defaults write com.apple.finder '_FXShowPosixPathInTitle' -bool true
 
+# Show dotfiles
+defaults write com.apple.finder AppleShowAllFiles YES
+
+killall Finder
+
 # Reset Dock contents
 # TODO doesn't seem to work consistently
 dockutil --list | awk -F\t '{print "dockutil --remove \""$1"\" --no-restart"}' | sh
