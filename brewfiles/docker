@@ -1,3 +1,4 @@
+brew "skopeo"
 cask "docker-desktop"
 vscode "docker.docker"
 vscode "ms-azuretools.vscode-containers"
