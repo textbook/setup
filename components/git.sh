@@ -1,6 +1,10 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
+# Selections from:
+# - https://github.com/pivotal/workstation-setup
+# - https://jvns.ca/blog/2024/02/16/popular-git-config-options/
+
 mkdir -p ~/.config/git
 cp "$HERE/config/.gitignore" ~/.config/git
 
