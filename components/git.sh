@@ -15,7 +15,7 @@ git config --global init.defaultbranch main
 git config --global log.date iso
 git config --global merge.conflictstyle zdiff3
 git config --global pull.rebase true
-git config --global push.default current
+git config --global push.autoSetupRemote true
 git config --global transfer.fsckobjects true
 
 git config --global alias.ci commit
